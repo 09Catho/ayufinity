@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --crm-bg: #f3f6f4;
+  --crm-surface: #ffffffd9;
+  --crm-border: #bed4c9;
+  --crm-heading: #1f3a30;
+  --crm-text: #324e42;
+  --crm-muted: #587265;
+  --crm-brand: #1f7a5c;
+  --crm-accent: #ca7a34;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--crm-text);
+  font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:
+    radial-gradient(circle at 85% -10%, #ffe8cc 0%, #ffe8cc00 48%),
+    radial-gradient(circle at 10% 10%, #d2ede1 0%, #d2ede100 45%),
+    linear-gradient(120deg, #eff6f2 0%, #f9f6ef 100%);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.title-font {
+  font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+}
+
+.glass-panel {
+  background: var(--crm-surface);
+  border: 1px solid #ffffff;
+  box-shadow: 0 16px 45px #2a4f4120;
+  backdrop-filter: blur(8px);
+}
+
+.fade-up {
+  animation: fade-up 420ms ease both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

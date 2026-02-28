@@ -1,0 +1,19 @@
+# Dependencies
+**/node_modules/
+
+# Build outputs
+**/dist/
+
+# Local env files
+.env
+.env.*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Extracted local docs (generated during setup)
+Flow and logic.txt
+Server UI DB.txt
+Ayufinity_IMPLEMENTATION_BIBLE_All_56_Tables_v3.txt
